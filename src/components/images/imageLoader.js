@@ -2,8 +2,10 @@ import * as lazyLoader from 'lazyLoader';
 import * as userSettings from 'userSettings';
 import * as blurhash from 'blurhash';
 import 'css!./style';
-/* eslint-disable indent */
+import Worker from './blurhash.worker.js';
+const worker = new Worker();
 
+/* eslint-disable indent */
     export function lazyImage(elem, source = elem.getAttribute('data-src')) {
         if (!source) {
             return;
@@ -17,6 +19,11 @@ import 'css!./style';
             // Although the default values recommended by Blurhash developers is 32x32, a size of 18x18 seems to be the sweet spot for us,
             // improving the performance and reducing the memory usage, while retaining almost full blur quality.
             // Lower values had more visible pixelation
+            // worker.postMessage('test');
+            // worker.addEventListener('message', function (e) {
+            //     console.log('Worker said: ', e.data);
+            // }, false);
+
             let width = 18;
             let height = 18;
             let pixels;
