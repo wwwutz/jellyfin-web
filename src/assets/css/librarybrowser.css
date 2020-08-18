@@ -1259,6 +1259,6 @@ div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
 
 @media all and (min-width: 40em) {
     .detail-clamp-text {
-        -webkit-line-clamp: ;
+        -webkit-line-clamp: 6;
     }
 }
