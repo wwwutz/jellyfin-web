@@ -437,7 +437,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    height: 40vh;
+    height: 12vh;
     position: relative;
     animation: backdrop-fadein 800ms ease-in normal both;
 }
@@ -1259,6 +1259,6 @@ div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
 
 @media all and (min-width: 40em) {
     .detail-clamp-text {
-        -webkit-line-clamp: 6;
+        -webkit-line-clamp: ;
     }
 }
