@@ -444,7 +444,7 @@
 
 .layout-mobile .itemBackdrop {
     background-attachment: scroll;
-    height: 26.5vh;
+    height: 4vh;
 }
 
 .layout-desktop .itemBackdrop::after,
