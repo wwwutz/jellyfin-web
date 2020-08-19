@@ -7,7 +7,6 @@
 }
 
 .touch-menu-la {
-    background-color: #fff;
     will-change: transform;
     display: -webkit-box;
     display: -webkit-flex;
