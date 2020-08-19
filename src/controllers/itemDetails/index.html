@@ -91,7 +91,25 @@
                 <div class="detailPagePrimaryContent padded-right">
                     <div class="detailSection">
                         <div class="itemMiscInfo nativeName hide"></div>
+                        <div class="recordingFields hide" style="margin: .5em 0 1.5em;"></div>
+                        <div class="detailSectionContent">
+                            <div class="itemLastPlayed hide"></div>
 
+                            <p class="itemGenres"></p>
+                            <h3 class="tagline"></h3>
+                            <p class="overview"></p>
+                            <div class="overview-controls">
+                                <a class="overview-expand hide" is="emby-linkbutton" href="#">${ShowMore}</a>
+                            </div>
+                            <p id="itemBirthday"></p>
+                            <p id="itemBirthLocation"></p>
+                            <p id="itemDeathDate"></p>
+                            <p id="seriesAirTime"></p>
+
+                            <div class="itemTags hide" style="margin: .7em 0;font-size:92%;"></div>
+                            <div class="itemExternalLinks hide" style="margin: .7em 0;font-size:92%;"></div>
+                            <div class="seriesRecordingEditor"></div>
+                        </div>
                         <div class="itemDetailsGroup">
                             <div class="detailsGroupItem genresGroup hide">
                                 <div class="genresLabel label"></div>
@@ -124,25 +142,6 @@
                             </div>
                         </form>
 
-                        <div class="recordingFields hide" style="margin: .5em 0 1.5em;"></div>
-                        <div class="detailSectionContent">
-                            <div class="itemLastPlayed hide"></div>
-
-                            <p class="itemGenres"></p>
-                            <h3 class="tagline"></h3>
-                            <p class="overview"></p>
-                            <div class="overview-controls">
-                                <a class="overview-expand hide" is="emby-linkbutton" href="#">${ShowMore}</a>
-                            </div>
-                            <p id="itemBirthday"></p>
-                            <p id="itemBirthLocation"></p>
-                            <p id="itemDeathDate"></p>
-                            <p id="seriesAirTime"></p>
-
-                            <div class="itemTags hide" style="margin: .7em 0;font-size:92%;"></div>
-                            <div class="itemExternalLinks hide" style="margin: .7em 0;font-size:92%;"></div>
-                            <div class="seriesRecordingEditor"></div>
-                        </div>
                     </div>
                 </div>
 
