@@ -437,7 +437,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    height: 40vh;
+    height: 20vh;
     position: relative;
     animation: backdrop-fadein 800ms ease-in normal both;
 }
@@ -547,6 +547,11 @@
 .itemName {
     margin: 0.5em 0;
     font-weight: 600;
+}
+
+.itemPath {
+    margin: 0.5em 0;
+    font-family: monospace;
 }
 
 .itemName.originalTitle {

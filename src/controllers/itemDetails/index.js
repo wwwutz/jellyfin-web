@@ -497,6 +497,12 @@ import 'emby-select';
             html += '<h4 class="itemName infoText originalTitle">' + item.OriginalTitle + '</h4>';
         }
 
+        // https://stackoverflow.com/questions/3820381/need-a-basename-function-in-javascript
+        if (item.Path) {
+            html += '<h5 class="itemPath infoText">' + item.Path.match(/(.*\/).*/)[1] + '</h5>';
+            html += '<h4 class="itemPath infoText">' + item.Path.split(/[\\/]/).pop() + '</h4>';
+        }
+
         container.innerHTML = html;
 
         if (html.length) {
